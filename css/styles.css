@@ -3,88 +3,17 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --paragraph-text-color: #757575;
-}
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-*,
-*::before,
-*::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
+  --primery-bg-color: #ffffff;
 }
 
-nav,
-footer,
-headeraside {
-  display: block;
-}
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  pad: 0;
-  border: 0;
-}
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
 body {
   background-color: #ffffff;
   color: #212121;
 }
+
 .list {
   list-style: none;
 }
-/*як скинути налаштування посилань за замовчуванням?*/
 .logo style {
   font-style: none;
 }
@@ -106,6 +35,9 @@ body {
 .site-nav .link {
   color: var(--paragraph-text-color);
 }
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 .address .add-list {
   color: var(--paragraph-text-color);
 }
@@ -120,6 +52,27 @@ body {
 .section-title {
   color: var(--primary-text-color);
 }
+
+/* body */
+/* header*/
+/*section hero*/
+
+/*портфоліо кнопки*/
 .btn {
-  color: var(--accent-color);
+  color: var(--primery-bg-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  display: flex;
+  border-color: transparent;
+}
+
+.button.primery {
+  color: var(--primery-bg-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border-color: transparent;
 }
