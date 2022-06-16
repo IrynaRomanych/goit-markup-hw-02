@@ -198,3 +198,9 @@ body {
 .address-footer .footer-main {
   color: var(--primery-bg-color);
 }
+.footer-main:hover,
+.footer-main:focus,
+.add-footer:hover,
+.add-footer:focus {
+  color: var(--accent-color);
+}
