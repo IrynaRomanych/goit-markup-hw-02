@@ -5,76 +5,60 @@
   --paragraph-text-color: #757575;
   --primery-bg-color: #ffffff;
 }
-
 body {
   background-color: var(--primery-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
 }
-
 .list {
   list-style: none;
-}
-
-/*Logo*/
-.logo .logo-web {
-  color: var(--accent-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  line-height: 1.19;
   text-decoration: none;
 }
-.logo .logo-item {
-  color: var(--primary-text-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
 .link {
   color: var(--primary-text-color);
   text-decoration: none;
 }
 
+/*Logo*/
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo .logo-item {
+  color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+}
 .portfolio-link {
   text-decoration: none;
 }
-
 .site-nav .link {
-  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
-
 .site-nav .link.current {
   color: var(--accent-color);
-  text-decoration: none;
 }
-
 .address .add-list {
   color: var(--paragraph-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
 .address .add-list:hover,
 .address .add-list:focus {
   color: var(--accent-color);
 }
-
 .section-title {
   color: var(--primary-text-color);
 }
@@ -83,58 +67,52 @@ body {
 
 /*портфоліо кнопки*/
 .button {
-  color: var(--primery-bg-color);
+  color: var(--primary-text-color);
   font-family: inherit;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   cursor: pointer;
 
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
 }
-
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.button .primery {
+.button .active {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
-  border-color: transparent;
 }
-
-.button .secondary {
-  color: var(--title-text-color);
-  background-color: #f5f4fa;
-  border-color: transparent;
+.button:hover,
+.button:focus {
+  color: var(--primery-bg-color);
+  background-color: var(--accent-color);
 }
 
 /*section hero */
 .hero {
+  background-color: #2f303a;
+}
+.main-title {
+  color: var(--primery-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-
 /* Hero main button*/
 .hero-btn {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
   font-weight: 700;
+  font-family: Roboto;
   font-size: 16px;
   line-height: 1.86;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
 
   border-radius: 4px;
-  border-color: transparent;
+  border-color: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -149,15 +127,15 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.title-list,
-.work-list,
-.team-list {
+.title-list {
   color: var(--paragraph-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .benefits {
@@ -165,12 +143,15 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .benefits-text {
   color: var(--paragraph-text-color);
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .team-member {
@@ -178,16 +159,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-}
-
-.benefits-text {
-  font-size: 14px;
-  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .position {
+  color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-menu {
@@ -202,21 +181,20 @@ body {
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.91;
+  letter-spacing: 0.03em;
 }
 
 /*Footer адреса фізична , інший колір var(--primery-bg-color)*/
-.add-list.main {
+.logo-light {
   color: var(--primery-bg-color);
 }
-
-/*осн колір фону #FFFFFF;*/
-/*вторинний колір фону #F5F4FA;*/
-/* осн колір тексту #212121; 
-*/
-/* колір фокус #2196F3;*/
-/*хіро заголовок  #FFFFFF;
-*/
-/*заголовки секцій  #212121;
-*/
-/* абзаци текст #757575;
- */
+/*адреса в футері - інший розмір - font-weight 400*/
+.address-footer .add-footer {
+  color: var(--paragraph-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-footer .footer-main {
+  color: var(--primery-bg-color);
+}
